@@ -1,6 +1,6 @@
 <!<!DOCTYPE html>
 <html lang="en">
-
+<!-- Header and BS stuff-->
 <head>
   <title>Bootstrap Components</title>
   <meta charset="utf-8" />
@@ -11,6 +11,39 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
+<!-- Nav-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">Mard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home </a>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Explore!
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Visualizations\F1.html">NASA Mars News</a>
+          <a class="dropdown-item" href="F2.html">JPL Mars Space Images </a>
+          <a class="dropdown-item" href="F3.html">Mars Facts</a>
+          <a class="dropdown-item" href="F4.html">Mars Hemispheres</a>
+        <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Comparisons.html">Comparisons</a>
+          <a class="dropdown-item" href="Data.html">Data</a>
+        </div>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+<!--End nav-->
   <title>
     Mars Data
   </title>
