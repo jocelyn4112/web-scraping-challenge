@@ -428,7 +428,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 .noUi-connect {
-  background: #888888;
+  background: #eea867;
   border-radius: 3px;
   -webkit-transition: background 450ms;
   transition: background 450ms;
