@@ -68,9 +68,13 @@
    line-height: 1.5;
    color: #fff;
    text-align: left;
-   background-color: #222;
+   background-color: lightblue;
  }
  
+.style_body{
+  background-color: lightblue;
+}
+
  [tabindex="-1"]:focus:not(:focus-visible) {
    outline: 0 !important;
  }
@@ -102,6 +106,7 @@
    text-decoration-skip-ink: none;
  }
  
+
  address {
    margin-bottom: 1rem;
    font-style: normal;
