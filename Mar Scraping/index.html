@@ -28,61 +28,16 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <!--<header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container">
-      <div class="header-container d-flex align-items-center">
-        <div class="logo mr-auto">
-          <h1 class="text-light"><a href="index.html"><span>Mars!</span></a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      <!--  </div>
-
-        <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li class="drop-down"><a href="">Drop Down</a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="drop-down"><a href="#">Drop Down 2</a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
-                <li><a href="#">Drop Down 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-
-            <li class="get-started"><a href="#about">Get Started</a></li>
-          </ul>
-        </nav><!-- .nav-menu -->
-      </div><!-- End Header Container -->
-    </div>
-  </header><!-- End Header -->
+<
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="100">
       <h1>Mars!</h1>
       <h2>Explore the Red Planet</h2>
-      <div class="view" style="background-image: assets\img\Mars Surface 2.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="view" style="bg-image"; background-repeat: no-repeat; background-size: cover; background-position: center center;">
         
-      <img src="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" class="img-responsive" alt="Cinque Terre" >
+      <img src={{Mars_Scrape.featured_image_url}} class="img-responsive" alt="Cinque Terre" >
       <a href="https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars" class="btn-get-started scrollto">More Images</a>
     </div>
   </section><!-- End Hero -->
@@ -98,20 +53,15 @@
         <div class="row content">
           <div class="bg" data-aos="fade-right" data-aos-delay="100">
             <h2>Mars News!</h2>
-            <h3>{{news_title}}</h3>
+            <h3>{{Mars_Scrape.news_title}}</h3>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
             <p>
-              Text From JN
+              {{Mars_Scrape.news_para}}
             </p>
-            <!--<ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
-            </ul>-->
+           
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              
             </p>
           </div>
         </div>
@@ -288,7 +238,7 @@
             <div class="row">
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                  <img src="{{featured_image_url}}" class="img-fluid" alt="Responsive image">
+                  <img src={{Mars_Scrape.featured_image_url}} class="img-fluid" alt="Responsive image">
                   <h4><a href="assets\img\cerberus_enhanced.tif_full.jpg">Cerberus</a></h4>
                   <p>Cerberus is a large "dark spot" (an albedo feature) located on Mars and named after the mythical dog Cerberus. The arcuate (curved) markings in the upper right are in the Amazonis plains and may be sand drifts.</p>
                   <p>(Wikipedia)</p>
@@ -301,6 +251,7 @@
               </picture>--> 
 <!-- How do I add the images in> -->
               <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
                   <img src="assets\img\schiaparelli_enhanced.tif_full.jpg" class="img-fluid" alt="Responsive image">
                   <h4><a href="">Schiaparelli</a></h4>

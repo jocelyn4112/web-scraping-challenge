@@ -1,11 +1,6 @@
-coding: utf-8
-
-#Imports & Dependencies
-
-
-
-
-
+from splinter import Browser
+from bs4 import BeautifulSoup as bs
+import time
 #URL 
 def scrape_info():
 #Mars Image JPL Scrape
@@ -62,22 +57,24 @@ def scrape_info():
         "featured_image_url": featured_image_url,
         "news_title": news_title,
         "news_para": news_para,
-
+        "Moons":  new_list,
+        "Hem URL": hemisphere_image_urls
     }
 
     # Close the browser after scraping
     browser.quit()
 
     # Return results
-    return costa_data
+    return mars_data
+    print(mars_data)
  
 
  
-def scrape_info(Headline) 
+#def scrape_info(Headline) 
     # Click the 'Next' button on each page
-    try:
-        browser.click_link_by_partial_text('next')
+ #   try:
+  #      browser.click_link_by_partial_text('next')
           
-    except:
-        print("Scraping Complete")
-        return(SEE COSTA AND MAKE A DIC )
+   # except:
+        #print("Scraping Complete")
+      #  return(mars_data)
