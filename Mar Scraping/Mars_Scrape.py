@@ -1,6 +1,9 @@
 from splinter import Browser
 from bs4 import BeautifulSoup as bs
 import time
+exec_path ={'executable_path': 'C:/Users/jocel/Documents/GitHub/web-scraping-challenge/chromedriver.exe'}
+browser = Browser('chrome', **exec_path)
+
 #URL 
 def scrape_info():
 #Mars Image JPL Scrape
