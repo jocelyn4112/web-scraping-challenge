@@ -73,11 +73,3 @@ def scrape_info():
  
 
  
-#def scrape_info(Headline) 
-    # Click the 'Next' button on each page
- #   try:
-  #      browser.click_link_by_partial_text('next')
-          
-   # except:
-        #print("Scraping Complete")
-      #  return(mars_data)

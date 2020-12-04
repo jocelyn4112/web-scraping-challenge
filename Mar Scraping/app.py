@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect
-import pymongo
+from flask_pymongo import PyMongo
 import Mars_Scrape
 
 # Create an instance of Flask
