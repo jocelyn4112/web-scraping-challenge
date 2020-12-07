@@ -16,16 +16,16 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="static/css/style.css" rel="stylesheet">
 
   
 <
@@ -37,7 +37,7 @@
       <h2>Explore the Red Planet</h2>
       <div class="view" style="bg-image: background-repeat no-repeat; background-size: cover; background-position: center center;">
         
-      <img src={{mars.featured_image_url}} class="img-responsive" alt="Cinque Terre" >
+      <img src={{Mars.featured_image_url}} class="img-responsive" alt="Cinque Terre" >
       <a href="/scrape" class="btn-get-started scrollto">Scrape!</a>
     </div>
   </section><!-- End Hero -->
@@ -53,11 +53,11 @@
         <div class="row content">
           <div class="bg" data-aos="fade-right" data-aos-delay="100">
             <h2>Mars News!</h2>
-            <h3>{{mars.news_title}}</h3>
+            <h3>{{Mars.news_title}}</h3>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
             <p>
-              {{mars.news_para}}
+              {{Mars.news_para}}
             </p>
            
             <p class="font-italic">
@@ -213,8 +213,8 @@
             <div class="row">
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-                  <img src={{mars.Cerberus}} class="img-fluid" alt="Responsive image">
-                  <h4><a href="assets\img\cerberus_enhanced.tif_full.jpg">Cerberus</a></h4>
+                  <img src={{Mars.Cerberus}} class="img-fluid" alt="Responsive image">
+                  <h4><a href="static\img\cerberus_enhanced.tif_full.jpg">Cerberus</a></h4>
                   <p>Cerberus is a large "dark spot" (an albedo feature) located on Mars and named after the mythical dog Cerberus. The arcuate (curved) markings in the upper right are in the Amazonis plains and may be sand drifts.</p>
                   <p>(Wikipedia)</p>
                 </div>
@@ -228,7 +228,7 @@
               <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
                 
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                  <img src="{{mars.Schiaparelli}}" class="img-fluid" alt="Responsive image">
+                  <img src="{{Mars.Schiaparelli}}" class="img-fluid" alt="Responsive image">
                   <h4><a href="">Schiaparelli</a></h4>
                   <p>Mosaic of the Schiaparelli hemisphere of Mars projected into point perspective, a view similar to that which one would see from a spacecraft. </p>
                   <p>(USGS)</p>
@@ -237,7 +237,7 @@
 
               <div class="col-md-6 d-flex align-items-stretch mt-4">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-                  <img src="{{mars.Syrtis}}" class="img-fluid" alt="Responsive image">
+                  <img src="{{Mars.Syrtis}}" class="img-fluid" alt="Responsive image">
                   <h4><a href="">Syrtis Major</a></h4>
                   <p>Syrtis Major was the first documented surface feature of another planet. It was discovered by Christiaan Huygens, who included it in a drawing of Mars in 1659.</p>
                 </div>
@@ -245,7 +245,7 @@
 
               <div class="col-md-6 d-flex align-items-stretch mt-4">
                 <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-                  <img src="{{mars.Valles}}" class="img-fluid" alt="Responsive image">
+                  <img src="{{Mars.Valles}}" class="img-fluid" alt="Responsive image">
                   <h4><a href="">Valles Marineris</a></h4>
                   <p>Valles Marineris is a vast canyon system stretching 4000 km across the Mars equatorial region east of the Tharsis Bulge. The full system is capable of stretching the entire length of the United States. The valley's depth can reach 10 km in some locations</p>
                   <p>(Marsopedia)</p>
@@ -274,20 +274,20 @@
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <!--Vendor JS Files--> 
+ <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="static/vendor/counterup/counterup.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/venobox/venobox.min.js"></script>
+  <script src="static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="static/js/main.js"></script>
 
 </body>
 
