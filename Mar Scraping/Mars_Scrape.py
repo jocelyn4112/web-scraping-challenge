@@ -9,29 +9,18 @@ def scrape_info():
 #Mars Image JPL Scrape
     url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
     browser.visit(url)
+    browser.click_link_by_partial_text("FULL IMAGE")
+    time.sleep(3)
+    browser.click_link_by_partial_text("more info")
     html = browser.html
-    soup = BeautifulSoup(html, 'html.parser')  
-    pic = soup.find("img",)["src"]
-    featured_image_url = "https://www.jpl.nasa.gov" + image
+    soup = bs(html, 'html.parser')  
+    #pic = soup.find("img",)["src"]
+    #featured_image_url = "https://www.jpl.nasa.gov" + image
+    sub_img = soup.find( "figure", class_="lede")
+    name=sub_img.a["href"]
+    featured_image='https://www.jpl.nasa.gov'+ name
    
 
-#News Headlines HERE
-    url = "https://mars.nasa.gov/news/"
-    browser.visit(url)
-    html = browser.html
-    news_soup = bs(html,'html.parser')
-    element = news_soup.select_one('ul.item_list li.slide')
-    news_title = element.find("div", class_='content_title').get_text()
-    
-
-#Text
-    url = "https://mars.nasa.gov/news/"
-    browser.visit(url)
-    html = browser.html
-    news_soup = bs(html,'html.parser')
-    element = news_soup.select_one('ul.item_list li.slide')
-    news_para = element.find("div", class_='article_teaser_body').get_text()
-    
 
 #moons - Moon Names 
     url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
@@ -52,20 +41,51 @@ def scrape_info():
         dic = {'title': new_list, 'img_url': link}
         hemisphere_image_urls.append(dic)
         browser.visit(url)
+
+    
+#News Headlines HERE
+    try:
+            
+        url = "https://mars.nasa.gov/news/"
+        browser.visit(url)
+        html = browser.html
+        news_soup = bs(html,'html.parser')
+        element = news_soup.select_one('ul.item_list li.slide')
+        news_title = element.find("div", class_='content_title').get_text()
+        
+
+    #Text
+        url = "https://mars.nasa.gov/news/"
+        browser.visit(url)
+        html = browser.html
+        news_soup = bs(html,'html.parser')
+        element = news_soup.select_one('ul.item_list li.slide')
+        news_para = element.find("div", class_='article_teaser_body').get_text()
+    except AttributeError:
+        return None, None   
     
 
 
     # Store data in a dictionary
     mars_data = {
-        "featured_image_url": featured_image_url,
+        "featured_image_url": featured_image,
         "news_title": news_title,
         "news_para": news_para,
         "Moons":  new_list,
-        "Hem URL": hemisphere_image_urls
-    }
+        "Hem URL": hemisphere_image_urls,
+        "Cerberus": Cerberus Hemisphere Enhanced,
+        "Schiaparelli" : Schiaparelli Hemisphere Enhanced,
+        "Syrtis": Syrtis Major Hemisphere Enhanced,
+        "Valles": Marineris Hemisphere Enhanced
+        
+            }
+
+    
 
     # Close the browser after scraping
     browser.quit()
+
+    
 
     # Return results
     return mars_data

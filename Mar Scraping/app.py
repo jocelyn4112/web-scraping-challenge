@@ -17,7 +17,7 @@ def index():
     db = mongo.db.collection.find_one()
 
     # Return template and data, Does Mars = Mars? 
-    return render_template("index.html", mars = db)
+    return render_template("index.html", Mars = db)
 
 
 # Route that will trigger the scrape function
