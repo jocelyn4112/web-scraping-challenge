@@ -73,10 +73,10 @@ def scrape_info():
         "news_para": news_para,
         "Moons":  new_list,
         "Hem URL": hemisphere_image_urls,
-        "Cerberus": Cerberus Hemisphere Enhanced,
-        "Schiaparelli" : Schiaparelli Hemisphere Enhanced,
-        "Syrtis": Syrtis Major Hemisphere Enhanced,
-        "Valles": Marineris Hemisphere Enhanced
+        #"Cerberus": hemisphere_image_urls.Cerberus Hemisphere Enhanced,
+        #"Schiaparelli" : hemisphere_image_urls.Schiaparelli Hemisphere Enhanced,
+        #"Syrtis": hemisphere_image_urls.Syrtis Major Hemisphere Enhanced,
+        #"Valles": hemisphere_image_urls.Marineris Hemisphere Enhanced
         
             }
 
