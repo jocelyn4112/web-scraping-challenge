@@ -10,7 +10,7 @@ def scrape_info():
     url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
     browser.visit(url)
     browser.click_link_by_partial_text("FULL IMAGE")
-    time.sleep(3)
+    time.sleep(10)
     browser.click_link_by_partial_text("more info")
     html = browser.html
     soup = bs(html, 'html.parser')  
@@ -71,13 +71,8 @@ def scrape_info():
         "featured_image_url": featured_image,
         "news_title": news_title,
         "news_para": news_para,
-        "Moons":  new_list,
-        "Hem URL": hemisphere_image_urls,
-        "Cerberus": hemisphere_image_urls.Cerberus Hemisphere Enhanced,
-        "Schiaparelli" : hemisphere_image_urls.Schiaparelli Hemisphere Enhanced,
-        "Syrtis": hemisphere_image_urls.Syrtis Major Hemisphere Enhanced,
-        "Valles": hemisphere_image_urls.Marineris Hemisphere Enhanced
-        
+        #"Moons":  new_list,
+        "Hem URL": hemisphere_image_urls       
             }
 
     
