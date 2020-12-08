@@ -31,7 +31,7 @@ def scrape():
     mongo.db.collection.update({}, mars_data, upsert=True)
 
     # Redirect back to home page
-    return "scrape done" 
+    return redirect ("/") 
 
 
 if __name__ == "__main__":

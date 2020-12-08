@@ -1,7 +1,7 @@
 from splinter import Browser
 from bs4 import BeautifulSoup as bs
 import time
-exec_path ={'executable_path': 'C:/Users/jocel/Documents/GitHub/web-scraping-challenge/chromedriver.exe'}
+exec_path ={'executable_path': 'chromedriver.exe'}
 browser = Browser('chrome', **exec_path)
 
 #URL 
@@ -38,7 +38,7 @@ def scrape_info():
     for list2 in new_list:
         browser.click_link_by_partial_text(list2)
         link= browser.find_by_text('Sample')['href']
-        dic = {'title': new_list, 'img_url': link}
+        dic = {'title': list2, 'img_url': link}
         hemisphere_image_urls.append(dic)
         browser.visit(url)
 
@@ -71,8 +71,7 @@ def scrape_info():
         "featured_image_url": featured_image,
         "news_title": news_title,
         "news_para": news_para,
-        #"Moons":  new_list,
-        "Hem URL": hemisphere_image_urls       
+        "hemisphere_image_urls": hemisphere_image_urls       
             }
 
     
